@@ -10,8 +10,8 @@ public class ListApp {
 		// 사각형 관리
 		RectList rList = new RectList();
 
-		Rectangle r01 = new Rectangle(3, 9);
-		Rectangle r02 = new Rectangle(10, 10);
+		Rectangle r01 = new Rectangle(2, 5);
+		Rectangle r02 = new Rectangle(12, 15);
 
 		rList.add(r01);
 		rList.add(r02);
@@ -22,11 +22,26 @@ public class ListApp {
 		Rectangle r100 = rList.get(0);
 		r100.draw();
 
+		for (int i = 0; i < rList.size(); i++) {
+			Rectangle r = rList.get(i);
+			r.draw();
+			//rList.get(i).draw(); --> 같은 표현
+		}
+
 		System.out.println(rList.size());
 
-		//원 관리
-		Circle cList = new Circle();
+		// 원 관리
+		CircleList cList = new CircleList();
+
+		Circle c01 = new Circle(5);
 		
+		cList.add(c01);
+		
+		Circle c100 = cList.get(0);
+		c100.draw();
+		
+
+		// 삼각형 관리
 	}
 
 }

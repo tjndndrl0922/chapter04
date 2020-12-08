@@ -1,15 +1,15 @@
-package com.javaex.ex01;
+package com.javaex.ex02;
 
-public class Traiangle {
+public class Triangle {
 
 	private int width;
 	private int height;
 	
-	public Traiangle() {
+	public Triangle() {
 		
 	}
 	
-	public Traiangle(int width, int height) {
+	public Triangle(int width, int height) {
 		super();
 		this.width = width;
 		this.height = height;
