@@ -1,16 +1,17 @@
 package com.javaex.ex04;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 
 public class ListApp {
 
 	public static void main(String[] args) {
 		// ArrayList 사용
 		//ArrayList<Rectangle> rList = new ArrayList<Rectangle>();
+		//LinkedList<Rectangle> rList = new LinkedList<Rectangle>();
 		
-		LinkedList<Rectangle> rList = new LinkedList<Rectangle>();
-
+		List<Rectangle> rList = new LinkedList<Rectangle>(); //섞어쓰기. 좋은코드
+		//List<Rectangle> rList = new ArrayList<Rectangle>(); 
 		Rectangle r01 = new Rectangle(5, 5);
 		Rectangle r02 = new Rectangle(7, 7);
 
@@ -53,7 +54,9 @@ public class ListApp {
 		for (int i = 0; i < rList.size(); i++) {
 			rList.get(i).draw();
 		}	
-
+		
+		System.out.println("toString======================================");
+		System.out.println(rList.toString());
 		// 원
 		//ArrayList<Circle> cList = new ArrayList<Circle>();
 		LinkedList<Circle> cList = new LinkedList<Circle>();
@@ -68,6 +71,8 @@ public class ListApp {
 		for (int i = 0; i < cList.size(); i++) {
 			cList.get(i).draw();
 		}
+		
+	
 
 	}
 
